@@ -40,7 +40,7 @@ function OceanScene() {
 
    const textureLoader = new THREE.TextureLoader();
 
-const earthTexture = textureLoader.load("/earth.jpg");
+const earthTexture = textureLoader.load("/bluemarble-2048_earth.png");
 
 const material = new THREE.MeshStandardMaterial({
   map: earthTexture,
