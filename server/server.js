@@ -1,7 +1,7 @@
 import http from "node:http";
 import { URL } from "node:url";
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // ============================================================
 // CACHE
@@ -880,9 +880,10 @@ const server =
 
 server.listen(
   PORT,
+  "0.0.0.0",
   () => {
     console.log(
-      `OceanVista backend running at http://localhost:${PORT}`
+      `OceanVista backend running on port ${PORT}`
     );
   }
 );
