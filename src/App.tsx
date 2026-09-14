@@ -74,7 +74,7 @@ function App() {
     selectedTime: number
   ) => {
     const response = await fetch(
-      `https://ocean-visualization-platform-iumn.onrender.com/api/ocean-data?lat=${encodeURIComponent(
+      `https://ocean-visualization-platform-iuwn.onrender.com/api/ocean-data?lat=${encodeURIComponent(
         location.latitude
       )}&lon=${encodeURIComponent(
         location.longitude
